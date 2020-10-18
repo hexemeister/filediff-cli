@@ -1,10 +1,10 @@
 {
-  "name": "filediff",
+  "name": "@hexemeister/filediff",
   "version": "0.0.1",
-  "description": "",
+  "description": "a tool to export different rows in text files",
   "main": "main.js",
   "bin": {
-    "filediff": "./main.js"
+    "filediff": "main.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,5 +20,13 @@
     "commander": "^6.1.0",
     "figlet": "^1.5.0",
     "inquirer": "^7.3.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hexemeister/filediff-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hexemeister/filediff-cli/issues"
+  },
+  "homepage": "https://github.com/hexemeister/filediff-cli#readme"
 }
