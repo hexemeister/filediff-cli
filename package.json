@@ -11,7 +11,7 @@
     "dev": "nodemon -I main.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Renato Moraes",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.4"

@@ -11,6 +11,9 @@ const DEFAULT_TARGET_FILENAME = 'filediff.txt'
 
 program.version(package.version, '-v, -V, --version', 'show version')
 
+console.log(figlet.textSync('Filediff', {font: 'Slant'}))
+console.log(`Created by ${package.author}\n`)
+
 program
     .command('export <file1> <file2>', { isDefault: true})
     .description('export results to a new file')
