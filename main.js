@@ -19,8 +19,8 @@ program
     .description('export results to a new file')
     .option('-t, --target <target-file>', 'specify target file', DEFAULT_TARGET_FILENAME)
     .option('-i, --invert', 'invert file1 with file2')
-    .action( (file1, file2, {target=DEFAULT_TARGET_FILENAME} ) => {
-        if (program.commands[0].invert) {
+    .action( (file1, file2, {target=DEFAULT_TARGET_FILENAME, invert} ) => {
+        if (invert) {
             console.log('Invert files: On')
             let tempFilename = file1
             file1 = file2
