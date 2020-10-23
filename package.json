@@ -2,20 +2,17 @@
   "name": "@hexemeister/filediff",
   "version": "0.0.1",
   "description": "a tool to export different rows in text files",
-  "main": "main.js",
+  "main": "src/main.js",
   "bin": {
-    "filediff": "main.js"
+    "filediff": "src/main.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon -I main.js"
+    "dev": "node src/main.js"
   },
   "keywords": [],
   "author": "Renato Moraes",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^2.0.6"
-  },
   "dependencies": {
     "commander": "^6.1.0",
     "figlet": "^1.5.0",
