@@ -7,6 +7,7 @@ const program = require("commander");
 const package = require("../package.json");
 
 const { pathToRows } = require("./pathToRows");
+const { diffRows } = require("./diffRows");
 
 const writeFile = promisify(fs.writeFile);
 
@@ -41,10 +42,7 @@ program
     console.log("Filename2:", B);
     console.log("Target Filename:", target);
 
-    const rowsA = await pathToRows(A);
-    const rowsB = await pathToRows(B);
-
-    const diff = rowsA.filter((value) => !rowsB.includes(value)).join("\n");
+    const diff = await diffRows(A, B);
 
     await writeFile(target, diff);
 
@@ -54,3 +52,5 @@ program
 program.helpOption("-h, --help", "display help");
 
 program.parse(process.argv);
+
+
