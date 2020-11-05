@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="./filediff-logo.png" alt="Project Filediff logo"></a>
+ <img src="./filediff-logo.png" alt="Project Filediff logo"></a>
 </p>
 
 <h3 align="center">@hexemeister/filediff</h3>
