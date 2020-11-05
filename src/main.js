@@ -10,13 +10,14 @@ const { pathToRows } = require("./pathToRows");
 const { diffRows } = require("./diffRows");
 
 const writeFile = promisify(fs.writeFile);
+const chalk = require('chalk')
 
 const DEFAULT_TARGET_FILENAME = "filediff.txt";
 
 program.version(package.version, "-v, -V, --version", "show version");
 
 console.log(figlet.textSync("Filediff", { font: "Slant" }));
-console.log(`Created by ${package.author} and some others.\n`);
+console.log(`Created by ${chalk.underline(package.author)} and some others.\n`);
 
 program
   .command("export <file1> <file2>", { isDefault: true })
@@ -31,7 +32,7 @@ program
     let A = file1,
       B = file2;
 
-    console.log(`Invert files: ${invert ? "On" : "Off"}`);
+    console.log(`Invert files: ${invert ? chalk.green("On") : "Off"}`);
 
     if (invert) {
       A = file2;
