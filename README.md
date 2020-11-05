@@ -1,5 +1,6 @@
 <p align="center">
- <div style="background-color: black; color: white; height: 15rem; width: 15rem; margin: auto; text-align: center; display: flex; justify-content: center; align-items: center; font-size: 4rem;  border-radius: 150px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">FileDiff</div>
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
 </p>
 
 <h3 align="center">@hexemeister/filediff</h3>
