@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="" rel="noopener">
+  <a href="#" rel="noopener">
  <img src="./filediff-logo.png" alt="Project Filediff logo"></a>
 </p>
 
