@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="https://i.imgur.com/6wj0hh6.jpg" alt="Project logo"></a>
+ <img width=200px height=200px src="./filediff-logo.svg" alt="Project Filediff logo"></a>
 </p>
 
 <h3 align="center">@hexemeister/filediff</h3>
@@ -28,7 +28,7 @@
 - [Usage](#usage)
 - [Built Using](#built_using)
 - [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
+- [Contributing](https://github.com/hexemeister/filediff-cli/graphs/contributors)
 - [Authors](#authors)
 - [Acknowledgments](#acknowledgement)
 
