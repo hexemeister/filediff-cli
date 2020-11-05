@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const figlet = require("figlet");
+const chalk = require('chalk')
 const fs = require("fs");
 const { promisify } = require("util");
 const program = require("commander");
@@ -10,7 +11,6 @@ const { pathToRows } = require("./pathToRows");
 const { diffRows } = require("./diffRows");
 
 const writeFile = promisify(fs.writeFile);
-const chalk = require('chalk')
 
 const DEFAULT_TARGET_FILENAME = "filediff.txt";
 
@@ -41,17 +41,15 @@ program
 
     console.log("Filename1:", A);
     console.log("Filename2:", B);
-    console.log("Target Filename:", target);
+    console.log("Target Filename:", chalk.yellow(target));
 
     const diff = await diffRows(A, B);
 
     await writeFile(target, diff);
 
-    console.log("Done.");
+    console.log(chalk.green("Done."));
   });
 
 program.helpOption("-h, --help", "display help");
 
 program.parse(process.argv);
-
-
