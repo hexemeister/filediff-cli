@@ -1,6 +1,6 @@
 {
   "name": "@hexemeister/filediff",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "a tool to export different rows in text files",
   "main": "src/main.js",
   "bin": {
